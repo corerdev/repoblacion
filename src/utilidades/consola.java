@@ -8,30 +8,30 @@ public class consola {
 		
 	}
 	
-	public int leerAnchura() {
+	public static int leerAnchura() {
 		int ancho = 0;
 		
 		do {
 			
-			System.out.println("Por favor, introduzca la anchura del bosque.");
+			System.out.println("Por favor, introduzca la anchura del bosque, comprendida entre 10 y 1000.");
 			ancho = Entrada.entero();
 		} while (ancho<10 || ancho>1000);
 		return ancho;
 		
 	}
 	
-	public int leerAltura() {
+	public static int leerAltura() {
 		int alto = 0;
 		
 		do {
 			
-			System.out.println("Por favor, introduzca la altura del bosque.");
+			System.out.println("Por favor, introduzca la altura del bosque, comprendida entre 10 y 500.");
 			alto = Entrada.entero();
-		} while (alto<10 || alto>1000);
+		} while (alto<10 || alto>500);
 		return alto;
 		
 	}
-	public int leerPoblacion() {
+	public static int leerPoblacion() {
 		int pob = 0;
 		
 		do {

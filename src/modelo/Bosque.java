@@ -100,7 +100,7 @@ public class Bosque {
 						|| (especieT.equals(Especie.OLIVO) && (arboles[i - 1].getEspecie().equals(Especie.ENCINA)));*/
 				arboles[i] = new Arbol(especieT, posicionT);
 			}
-
+			
 		}
 
 	}
@@ -233,7 +233,10 @@ public class Bosque {
 
 	@Override
 	public String toString() {
-		return "Bosque [arbolMasAlejado=" + arbolMasAlejado + ", arbolMasCentrado=" + arbolMasCentrado + "]";
+		for (Arbol arbol : arboles) {
+			System.out.println(arbol);
+		}
+		return "En nuestro bosque, el arbol más alejado es: " + arbolMasAlejado + " Y el mas centrado: " + arbolMasCentrado;
 	}
 
 }
